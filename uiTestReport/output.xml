@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.11 on darwin)" generated="20230417 10:43:04.763" rpa="false" schemaversion="3">
+<suite id="s1" name="uiTest" source="/Users/bhavanibojarajan/PycharmProjects/RobotChallengeProject/uiTest">
+<suite id="s1-s1" name="uiTest" source="/Users/bhavanibojarajan/PycharmProjects/RobotChallengeProject/uiTest/uiTest.robot">
+<test id="s1-s1-t1" name="As the Clerk, I should be able to upload a civ file to a portal so that I can populate the database from a UI" line="14">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230417 10:43:05.105" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080'.</msg>
+<msg timestamp="20230417 10:43:08.105" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230417 10:43:08.105" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=112.0.5615.121)
+Stacktrace:
+0   chromedriver                        0x0000000108c15ae8 chromedriver + 4958952
+1   chromedriver                        0x0000000108c0d7b3 chromedriver + 4925363
+2   chromedriver                        0x00000001087cf1d6 chromedriver + 475606
+3   chromedriver                        0x00000001087c6deb chromedriver + 441835
+4   chromedriver                        0x00000001087b80ec chromedriver + 381164
+5   chromedriver                        0x00000001087b9b41 chromedriver + 387905
+6   chromedriver                        0x00000001087b8476 chromedriver + 382070
+7   chromedriver                        0x00000001087b718b chromedriver + 377227
+8   chromedriver                        0x00000001087b6ffb chromedriver + 376827
+9   chromedriver                        0x00000001087b581a chromedriver + 370714
+10  chromedriver                        0x00000001087b5bdd chromedriver + 371677
+11  chromedriver                        0x00000001087d14c6 chromedriver + 484550
+12  chromedriver                        0x00000001088548c1 chromedriver + 1022145
+13  chromedriver                        0x0000000108838c12 chromedriver + 908306
+14  chromedriver                        0x000000010885425b chromedriver + 1020507
+15  chromedriver                        0x00000001088389e3 chromedriver + 907747
+16  chromedriver                        0x0000000108802aef chromedriver + 686831
+17  chromedriver                        0x000000010880400e chromedriver + 692238
+18  chromedriver                        0x0000000108bd19ad chromedriver + 4680109
+19  chromedriver                        0x0000000108bd6c12 chromedriver + 4701202
+20  chromedriver                        0x0000000108bdd79f chromedriver + 4728735
+21  chromedriver                        0x0000000108bd7b7a chromedriver + 4705146
+22  chromedriver                        0x0000000108baa27e chromedriver + 4518526
+23  chromedriver                        0x0000000108bf7908 chromedriver + 4835592
+24  chromedriver                        0x0000000108bf7a87 chromedriver + 4835975
+25  chromedriver                        0x0000000108c0700f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff8100301d3 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff81002bbd3 thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230417 10:43:05.105" endtime="20230417 10:43:08.112"/>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<arg>${btnToUpload}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:08.112" endtime="20230417 10:43:08.112"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${btnToUpload}</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:08.112" endtime="20230417 10:43:08.112"/>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<arg>${btnToUpload}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:08.113" endtime="20230417 10:43:08.113"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>${btnToUpload}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:08.113" endtime="20230417 10:43:08.113"/>
+</kw>
+<kw name="Choose File" library="Selenium2Library">
+<arg>${btnToUpload}</arg>
+<arg>./Users/bhavanibojarajan/PycharmProjects/RobotChallengeProject/uiTest\${inputFileName}</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:08.113" endtime="20230417 10:43:08.113"/>
+</kw>
+<status status="FAIL" starttime="20230417 10:43:05.104" endtime="20230417 10:43:08.113">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=112.0.5615.121)
+Stacktrace:
+0   chromedriver                        0x0000000108c15ae8 chromedriver + 4958952
+1   chromedriver                        0x0000000108c0d7b3 chromedriver + 4925363
+2   chromedriver                        0x00000001087cf1d6 chromedriver + 475606
+3   chromedriver                        0x00000001087c6deb chromedriver + 441835
+4   chromedriver                        0x00000001087b80ec chromedriver + 381164
+5   chromedriver                        0x00000001087b9b41 chromedriver + 387905
+6   chromedriver                        0x00000001087b8476 chromedriver + 382070
+7   chromedriver                        0x00000001087b718b chromedriver + 377227
+8   chromedriver                        0x00000001087b6ffb chromedriver + 3...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010880400e chromedriver + 692238
+18  chromedriver                        0x0000000108bd19ad chromedriver + 4680109
+19  chromedriver                        0x0000000108bd6c12 chromedriver + 4701202
+20  chromedriver                        0x0000000108bdd79f chromedriver + 4728735
+21  chromedriver                        0x0000000108bd7b7a chromedriver + 4705146
+22  chromedriver                        0x0000000108baa27e chromedriver + 4518526
+23  chromedriver                        0x0000000108bf7908 chromedriver + 4835592
+24  chromedriver                        0x0000000108bf7a87 chromedriver + 4835975
+25  chromedriver                        0x0000000108c0700f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff8100301d3 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff81002bbd3 thread_start + 15</status>
+</test>
+<test id="s1-s1-t2" name="As the Bookkeeper, I should be able to query the amount of tax relief for each person in the database so that I can report the figures to my Bookkeeping Manager" line="23">
+<kw name="Open Browser" library="Selenium2Library">
+<arg>${url}</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230417 10:43:08.116" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:8080'.</msg>
+<msg timestamp="20230417 10:43:10.876" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230417 10:43:10.876" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=112.0.5615.121)
+Stacktrace:
+0   chromedriver                        0x0000000101221ae8 chromedriver + 4958952
+1   chromedriver                        0x00000001012197b3 chromedriver + 4925363
+2   chromedriver                        0x0000000100ddb1d6 chromedriver + 475606
+3   chromedriver                        0x0000000100dd2deb chromedriver + 441835
+4   chromedriver                        0x0000000100dc40ec chromedriver + 381164
+5   chromedriver                        0x0000000100dc5b41 chromedriver + 387905
+6   chromedriver                        0x0000000100dc4476 chromedriver + 382070
+7   chromedriver                        0x0000000100dc318b chromedriver + 377227
+8   chromedriver                        0x0000000100dc2ffb chromedriver + 376827
+9   chromedriver                        0x0000000100dc181a chromedriver + 370714
+10  chromedriver                        0x0000000100dc1bdd chromedriver + 371677
+11  chromedriver                        0x0000000100ddd4c6 chromedriver + 484550
+12  chromedriver                        0x0000000100e608c1 chromedriver + 1022145
+13  chromedriver                        0x0000000100e44c12 chromedriver + 908306
+14  chromedriver                        0x0000000100e6025b chromedriver + 1020507
+15  chromedriver                        0x0000000100e449e3 chromedriver + 907747
+16  chromedriver                        0x0000000100e0eaef chromedriver + 686831
+17  chromedriver                        0x0000000100e1000e chromedriver + 692238
+18  chromedriver                        0x00000001011dd9ad chromedriver + 4680109
+19  chromedriver                        0x00000001011e2c12 chromedriver + 4701202
+20  chromedriver                        0x00000001011e979f chromedriver + 4728735
+21  chromedriver                        0x00000001011e3b7a chromedriver + 4705146
+22  chromedriver                        0x00000001011b627e chromedriver + 4518526
+23  chromedriver                        0x0000000101203908 chromedriver + 4835592
+24  chromedriver                        0x0000000101203a87 chromedriver + 4835975
+25  chromedriver                        0x000000010121300f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff8100301d3 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff81002bbd3 thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230417 10:43:08.115" endtime="20230417 10:43:10.895"/>
+</kw>
+<kw name="Scroll Element Into View" library="Selenium2Library">
+<arg>${btnToDispense}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.896" endtime="20230417 10:43:10.896"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${btnToDispense}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.896" endtime="20230417 10:43:10.896"/>
+</kw>
+<kw name="Set Focus To Element" library="Selenium2Library">
+<arg>${btnToDispense}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.896" endtime="20230417 10:43:10.896"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<var>${Result}</var>
+<arg>${btnToDispense}</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.896" endtime="20230417 10:43:10.896"/>
+</kw>
+<kw name="Get Element Attribute" library="Selenium2Library">
+<var>${bgcolor}</var>
+<arg>${btnToDispense}</arg>
+<arg>background-color</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.897" endtime="20230417 10:43:10.897"/>
+</kw>
+<kw name="Click Element" library="Selenium2Library">
+<arg>${btnToDispense}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.897" endtime="20230417 10:43:10.897"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="Selenium2Library">
+<arg>${txtCashDispensed}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.897" endtime="20230417 10:43:10.897"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${actualText}</var>
+<arg>${txtCashDispensed}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.897" endtime="20230417 10:43:10.897"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${actualText}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.898" endtime="20230417 10:43:10.898"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${actualText}</arg>
+<arg>Cash dispensed</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="NOT RUN" starttime="20230417 10:43:10.898" endtime="20230417 10:43:10.898"/>
+</kw>
+<status status="FAIL" starttime="20230417 10:43:08.114" endtime="20230417 10:43:10.898">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=112.0.5615.121)
+Stacktrace:
+0   chromedriver                        0x0000000101221ae8 chromedriver + 4958952
+1   chromedriver                        0x00000001012197b3 chromedriver + 4925363
+2   chromedriver                        0x0000000100ddb1d6 chromedriver + 475606
+3   chromedriver                        0x0000000100dd2deb chromedriver + 441835
+4   chromedriver                        0x0000000100dc40ec chromedriver + 381164
+5   chromedriver                        0x0000000100dc5b41 chromedriver + 387905
+6   chromedriver                        0x0000000100dc4476 chromedriver + 382070
+7   chromedriver                        0x0000000100dc318b chromedriver + 377227
+8   chromedriver                        0x0000000100dc2ffb chromedriver + 3...
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x0000000100e1000e chromedriver + 692238
+18  chromedriver                        0x00000001011dd9ad chromedriver + 4680109
+19  chromedriver                        0x00000001011e2c12 chromedriver + 4701202
+20  chromedriver                        0x00000001011e979f chromedriver + 4728735
+21  chromedriver                        0x00000001011e3b7a chromedriver + 4705146
+22  chromedriver                        0x00000001011b627e chromedriver + 4518526
+23  chromedriver                        0x0000000101203908 chromedriver + 4835592
+24  chromedriver                        0x0000000101203a87 chromedriver + 4835975
+25  chromedriver                        0x000000010121300f chromedriver + 4898831
+26  libsystem_pthread.dylib             0x00007ff8100301d3 _pthread_start + 125
+27  libsystem_pthread.dylib             0x00007ff81002bbd3 thread_start + 15</status>
+</test>
+<status status="FAIL" starttime="20230417 10:43:04.796" endtime="20230417 10:43:10.900"/>
+</suite>
+<status status="FAIL" starttime="20230417 10:43:04.764" endtime="20230417 10:43:10.901"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="uiTest">uiTest</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="uiTest">uiTest.uiTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

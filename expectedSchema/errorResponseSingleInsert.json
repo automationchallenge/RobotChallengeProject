@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "properties": {
+    "timestamp": {
+      "type": "string"
+    },
+    "status": {
+      "type": "integer"
+    },
+    "error": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string",
+      "value": "could not prepare '\n     'statement; SQL [insert into working_class_hero (id, birthday, '\n     'gender, name, natid, salary, tax) values (null, ?, ?, ?, ?, ?, ?)]; '\n     'nested exception is org.hibernate.exception.SQLGrammarException: '\n     'could not prepare statement"
+    },
+    "path": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "timestamp",
+    "status",
+    "error",
+    "message",
+    "path"
+  ]
+}
